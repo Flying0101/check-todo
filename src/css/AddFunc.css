@@ -1,21 +1,26 @@
 
 
 .AddFunc{
-    position: absolute;
+    position: fixed;
     
-    bottom: 5%;
-    right: 5%;
 
-    width: 60px;
-    height: 50px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
 
     align-content: center;
 }
 
 
+
 .add-btn{
     position: fixed;
     text-align: center;
+    bottom: 3%;
+    right: 2%;
 
     background: #31e421d8;
     width: 60px;
@@ -33,3 +38,113 @@
     transition-duration: 0.3s;
 
 }
+
+.dis{
+    display: none;
+}
+
+.modal-header{ 
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%);
+
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    letter-spacing: 1px;
+
+    width: 100%;
+
+}
+
+.add-modal{ 
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 80%;
+    background: rgba(0, 77, 0, 0.99);
+    color: white; 
+
+    text-align: center;
+    line-height: 4;
+
+
+}
+
+.task-form{
+    position: relative;
+    top: 31%;
+
+}
+
+.task-categorie{
+    color: black;
+    background: rgb(214, 214, 214) 
+}
+
+.modal-input{
+    width: 90%;
+    text-align: center;
+    height: 45px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.1rem;
+
+
+}
+
+.form-btn{ 
+    width: 90%;
+    height: 50px;
+    background-color: #25c916;
+    border: none;
+    color: white;
+    
+    font-size: 1.2rem;
+
+}
+
+.form-btn:hover{
+    
+    background-color: white;
+    color: #25c916;
+
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+}
+
+.arrow-container{ 
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 65px; 
+    height: 65px;
+
+
+    text-align: left;
+}
+
+.modal-arrow{
+    position: absolute;
+
+    width: 30px; 
+    height: 30px;
+    bottom: 0%;
+
+    color: #15ff00; 
+    padding: 15px;
+}
+
+.modal-arrow:hover{
+    width: 35px; 
+    height: 35px;
+    color: white; 
+    cursor: pointer;
+
+}
+

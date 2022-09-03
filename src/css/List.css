@@ -21,7 +21,7 @@
 
 }
 
-.inbox-header{ 
+.inbox-header {
     position: relative;
     top: 5%;
     left: 5%;
@@ -29,8 +29,8 @@
     color: rgb(82, 82, 82);
 }
 
-.list-box{
-    
+.list-box {
+
     position: relative;
     top: 5%;
     left: 5%;
@@ -45,6 +45,42 @@
     width: 100%;
 
 }
+
+.task-container {
+    top: 0%;
+    padding: 0;
+}
+
+.list-task {
+    position: relative;
+    left: 0%;
+
+
+    padding: 10px;
+    height: 43px;
+    letter-spacing: 0.7px;
+
+    list-style: none;
+    background: white;
+    border-bottom: 2px solid rgb(63, 63, 63);
+    margin-bottom: 10px;
+
+    line-height: 1.4;
+
+}
+
+.task-info{
+    font-size: 1.1rem;
+
+}
+
+.task-location{ 
+    color: rgb(63, 63, 63);
+    font-size: 0.9rem;
+}
+
+
+
 
 
 

@@ -1,11 +1,11 @@
-import react from 'react'; 
-
+import react from 'react';
+import { RecoilRoot } from 'recoil';
 
 import Display from './components/Display.js';
 import List from './components/List.js';
 import AddFunc from './components/AddFunc.js';
 
-import './css/App.css'; 
+import './css/App.css';
 
 function App() {
 
@@ -15,10 +15,12 @@ function App() {
 
   return (
     <div className="App">
-      <Display/>
-      <List/>
-      <AddFunc/>
 
+      <RecoilRoot>
+        <Display />
+        <List />
+        <AddFunc />
+      </RecoilRoot>
     </div>
   );
 }
