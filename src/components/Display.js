@@ -20,18 +20,17 @@ function Display() {
             <div className="stat-div">
                 <div className="stat-grid">
                     <div className="stats">
-                        <p className="no">10 <br/> information</p>
+                        <p className="no">10% <br/> <span className="no2">active</span></p>
                     </div>
                     <div className="stats">
-                        <p className="no">10 <br/> information</p>
+                        <p className="no">10% <br/> <span className="no2">done</span></p>
 
                     </div>
 
                 </div>
 
 
-                <div className="stat-margin">testing
-
+                <div className="stat-margin">Stats
                 </div>
             </div>
 

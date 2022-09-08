@@ -63,6 +63,16 @@
 
 }
 
+
+.no{
+
+}
+
+.no2{
+    display: block;
+    font-size: clamp(0.5rem, 4vw, 1.3rem);
+}
+
 .stat-margin{
     position: absolute; 
     top: 83%;
@@ -73,7 +83,6 @@
 
     color: white;
 }
-
 
 .display-header{
     position: absolute;
@@ -92,3 +101,4 @@
     top: 90%;
     left: 7%;
 }
+

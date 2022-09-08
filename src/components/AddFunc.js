@@ -24,13 +24,15 @@ function AddFunc() {
 
 
 
+
+
     function openModal() {
         setShowModal(!showModal);
     }
 
 
-
     function addTask() {
+
 
 
         const taskList = {
@@ -40,6 +42,7 @@ function AddFunc() {
             Todo: task,
             done: false,
             time: new Date(Date.now()).getHours() + ':' + new Date(Date.now()).getMinutes(),
+            id:  Math.random().toString(16).slice(2),
 
         };
 
@@ -49,9 +52,9 @@ function AddFunc() {
 
         setShowModal(false);
 
-    } 
+    }
 
-    function closeModal() { 
+    function closeModal() {
 
         setShowModal(false);
     }
@@ -59,33 +62,36 @@ function AddFunc() {
 
 
     return (
-        <div className="AddFunc">
+        <div>
             <button onClick={openModal} className="add-btn">+</button>
 
-            <div className={!showModal ? 'dis' : 'add-modal'}>
-                <div className="arrow-container"  >
-                    <FaArrowDown className="modal-arrow" onClick={(closeModal)} />
+            <div className={!showModal ? 'dis' : 'AddFunc'}>
+
+                <div className={!showModal ? 'dis' : 'add-modal'}>
+                    <div className="arrow-container"  >
+                        <FaArrowDown className="modal-arrow" onClick={(closeModal)} />
+                    </div>
+
+                    <p className="modal-header">Add new task!</p>
+                    <form className="task-form" onSubmit={(e) => { e.preventDefault() }}>
+                        <select className="modal-input" onChange={(event) => { setType(event.target.value) }} >
+                            <option className="task-categorie" >Type of task...</option>
+                            <option className="task-categorie" value="Business">Business</option>
+                            <option className="task-categorie" value="Training">Training</option>
+                            <option className="task-categorie" value="School">School</option>
+                            <option className="task-categorie" value="Party">Party</option>
+                        </select>
+                        <br />
+                        <input className="modal-input" type="text" placeholder="Place" onChange={(event) => { setPlace(event.target.value) }}></input>
+                        <br />
+                        <input className="modal-input" type="text" placeholder="Task" onChange={(event) => { setTask(event.target.value) }}></input>
+                        <br />
+                        <button className="form-btn" type="submit" onClick={(addTask)}>ADD YOUR TASK</button>
+                    </form>
+
                 </div>
 
-                <p className="modal-header">Add new task!</p>
-                <form className="task-form" onSubmit={(e) => { e.preventDefault() }}>
-                    <select className="modal-input" onChange={(event) => { setType(event.target.value) }} >
-                        <option className="task-categorie" >Type of task...</option>
-                        <option className="task-categorie" value="Business">Business</option>
-                        <option className="task-categorie" value="Training">Training</option>
-                        <option className="task-categorie" value="School">School</option>
-                        <option className="task-categorie" value="Party">Party</option>
-                    </select>
-                    <br />
-                    <input className="modal-input" type="text" placeholder="Place" onChange={(event) => { setPlace(event.target.value) }}></input>
-                    <br />
-                    <input className="modal-input" type="text" placeholder="Task" onChange={(event) => { setTask(event.target.value) }}></input>
-                    <br />
-                    <button className="form-btn" type="submit" onClick={(addTask)}>ADD YOUR TASK</button>
-                </form>
-
             </div>
-
         </div>
     );
 }
