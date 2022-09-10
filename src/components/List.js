@@ -1,4 +1,4 @@
-import react from 'react';
+import react, { useState } from 'react';
 import { atom, useRecoilState, useRecoilValue } from 'recoil';
 import { allTasks } from '../stores/AllTasks.js';
 import '../css/List.css';
@@ -24,10 +24,10 @@ function List() {
     const trainIcon = <FaRunning />;
 
 
-
     function delTask(data) {
         console.log(data.id);
         setWholeList(prev => prev.filter(tasks => tasks.id !== data.id));
+
     }
 
     function completeTask(data) {
@@ -94,7 +94,7 @@ function List() {
                         </ul>
 
                     </ScrollToBottom>
-                    
+
                 </div>
 
             </div>

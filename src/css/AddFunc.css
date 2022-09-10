@@ -1,11 +1,9 @@
-
-
-.AddFunc{
+.AddFunc {
     position: fixed;
-    
 
-    top: 50%; 
-    left: 50%; 
+
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
     width: 100%;
@@ -20,7 +18,7 @@
 
 
 
-.add-btn{
+.add-btn {
     position: fixed;
     text-align: center;
     bottom: 3%;
@@ -35,23 +33,23 @@
 
     font-size: 3rem;
     border-radius: 70px;
-    box-shadow: 4px 9px 15px 5px rgba(0,0,0,0.39);
+    box-shadow: 4px 9px 15px 5px rgba(0, 0, 0, 0.39);
 
 }
 
-.add-btn:hover{
-    background: white; 
-    color: #2cc01fd8; 
+.add-btn:hover {
+    background: white;
+    color: #2cc01fd8;
     cursor: pointer;
     transition-duration: 0.3s;
 
 }
 
-.dis{
+.dis {
     display: none;
 }
 
-.modal-header{ 
+.modal-header {
     position: absolute;
     top: 7%;
     left: 50%;
@@ -64,16 +62,16 @@
 
 }
 
-.add-modal{ 
+.add-modal {
 
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; 
+    width: 80%;
     height: 80%;
     background: rgba(0, 77, 0, 0.99);
-    color: white; 
+    color: white;
 
     text-align: center;
     line-height: 4;
@@ -81,18 +79,18 @@
 
 }
 
-.task-form{
+.task-form {
     position: relative;
     top: 31%;
 
 }
 
-.task-categorie{
+.task-categorie {
     color: black;
-    background: rgb(214, 214, 214) 
+    background: rgb(214, 214, 214)
 }
 
-.modal-input{
+.modal-input {
     width: 90%;
     text-align: center;
     height: 45px;
@@ -105,19 +103,19 @@
 
 }
 
-.form-btn{ 
+.form-btn {
     width: 90%;
     height: 50px;
     background-color: #25c916;
     border: none;
     color: white;
-    
+
     font-size: 1.2rem;
 
 }
 
-.form-btn:hover{
-    
+.form-btn:hover {
+
     background-color: white;
     color: #25c916;
 
@@ -126,33 +124,32 @@
 
 }
 
-.arrow-container{ 
+.arrow-container {
     position: absolute;
     top: 0%;
     right: 0%;
-    width: 65px; 
+    width: 65px;
     height: 65px;
 
 
     text-align: left;
 }
 
-.modal-arrow{
+.modal-arrow {
     position: absolute;
 
-    width: 30px; 
+    width: 30px;
     height: 30px;
     bottom: 0%;
 
-    color: #15ff00; 
+    color: #15ff00;
     padding: 15px;
 }
 
-.modal-arrow:hover{
-    width: 35px; 
+.modal-arrow:hover {
+    width: 35px;
     height: 35px;
-    color: white; 
+    color: white;
     cursor: pointer;
 
 }
-
